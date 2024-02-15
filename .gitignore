@@ -1,0 +1,10 @@
+**/node_modules/**
+**/.wxt/**
+*.log
+pj/log/*
+*.tar.xz
+*.tar.gz
+*.tgz
+*.txz
+*.xz
+*.gz
