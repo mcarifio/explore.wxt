@@ -1,2 +1,4 @@
 # wxt
-explore wxt
+
+Explore [wxt](https://wxt.dev/)
+
