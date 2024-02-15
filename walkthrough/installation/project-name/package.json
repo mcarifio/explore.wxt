@@ -1,0 +1,24 @@
+{
+  "name": "project-name",
+  "version": "1.0.0",
+  "description": "wxt walkthrough",
+  "main": "index.js",
+
+  "scripts": {
+    "dev": "wxt", 
+    "dev:firefox": "wxt --browser firefox", 
+    "build": "wxt build", 
+    "build:firefox": "wxt build --browser firefox", 
+    "zip": "wxt zip", 
+    "zip:firefox": "wxt zip --browser firefox", 
+    "postinstall": "wxt prepare",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+
+  "keywords": [],
+  "author": "Mike Carifio <mike@carif.io>",
+  "license": "ISC",
+  "devDependencies": {
+    "wxt": "^0.16.7"
+  }
+}
