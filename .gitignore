@@ -8,3 +8,4 @@ pj/log/*
 *.txz
 *.xz
 *.gz
+**/.output/**

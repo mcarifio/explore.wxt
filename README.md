@@ -1,12 +1,13 @@
-# wxt-notes
+# wxt-walkthrough
 
-Explore [wxt](https://wxt.dev/), a framework to write chrome plugins. See [./notes/](./notes/) for more.
+Explore [wxt](https://wxt.dev/), a framework to write chrome plugins by walking through their documentation and examples. See [my notes](./pj/note/) for more.
 
 ## start
 
 ### start nodejs
 
-The wxt documentation traffics in node, so I started there. I installed asdf, then nodejs, updated/installed `pnpm` and `npm` and then install installed `wxt@latest`.
+The wxt documentation traffics in node, so let's start there as well. There are several ways to install node and then wxt. I avoided the package manager because the versions are often dated.
+So I installed asdf, then nodejs, updated/installed `pnpm` and `npm` and then install installed `wxt@latest`.
 
 ```bash
 $ p='' output='' OLDPS1="$PS1" PS1="\$p " ## now you can paste all the commands below wholesale with (set -x; <paste> ) 2>&1 | tee -p /dev/stderr | wl-copy 
@@ -53,7 +54,11 @@ $p asdf which wxt
 $p wxt --version
 wxt/0.16.6 linux-x64 node-v21.6.2
 
-$p mkdir -p ~/explore/wxt; cd $_
+$p sudo dnf install -y direnv just
+
+$p git clone https://github.com/mcarifio/wxt-walkthrough ~/explore/wxt && direnv allow ~/explore/wxt && cd ~/explore/wxt
+
+pj start
 ```
 
 ### start deno
